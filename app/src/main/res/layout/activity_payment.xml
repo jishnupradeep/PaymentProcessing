@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background_dark">
+
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            >
+
+            <TextView
+                android:text="Movie Details"
+                android:layout_width="match_parent"
+                android:id="@+id/textMovie"
+                android:layout_marginLeft="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimarylight"
+                android:layout_span="5" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/MovieName"
+                android:textColor="@color/colorPressedHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Movie Name:"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie"
+                android:textSize="18sp"
+                android:layout_column="1"
+                android:textColor="#eee1e1" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/textSeats"
+                android:textColor="@color/colorPressedHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Of Seats :"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/noofseats"
+                android:layout_column="1"
+                android:textColor="#f4e8e8" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/theatre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPressedHighlight"
+                android:textSize="18sp"
+                android:text="Theatre/Screen :"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/theascre"
+                android:layout_column="1"
+                android:textColor="#f3e2e2"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/moviedatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPressedHighlight"
+                android:textSize="18sp"
+                android:text="Show TIme :"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datetime"
+                android:layout_column="1"
+                android:textColor="#f3e2e2"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/emailrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/email"
+                android:textColor="@color/colorPressedHighlight"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Email:"
+                android:layout_column="0"
+                android:layout_below="@+id/table1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailid"
+                android:layout_column="1"
+                android:layout_span="4"
+                android:textSize="18sp"
+                android:textColor="#f0e6e6" />
+
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/phonenorow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/phone"
+                android:textColor="@color/colorPressedHighlight"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Phone No:"
+                android:layout_column="0"
+                android:layout_below="@+id/table1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/phoneid"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:textColor="#f0e6e6" />
+
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/pricerow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/Price"
+                android:textColor="@color/colorPressedHighlight"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Price:"
+                android:layout_column="0"
+                android:layout_below="@+id/table1" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/prices"
+                android:layout_column="1"
+                android:textColor="#f4e8e8" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:id="@+id/payment"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

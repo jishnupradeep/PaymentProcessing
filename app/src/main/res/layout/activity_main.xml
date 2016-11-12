@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs442.dsuraj.paymentprocessing.MainActivity"
+    android:background="@android:color/background_dark">
+
+    <TextView
+        android:text="Available Seats"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_above="@+id/button3"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#A45B5B" />
+
+    <TextView
+        android:text="Sold  Seats"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="#A45B5B"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_alignBottom="@+id/button3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A1"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A2"
+        android:layout_toEndOf="@+id/button3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A2"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/A1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A3"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A1"
+        android:layout_toEndOf="@+id/A1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A4"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A3"
+        android:layout_toEndOf="@+id/A3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A5"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A4"
+        android:layout_toEndOf="@+id/A4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A6"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A5"
+        android:layout_toEndOf="@+id/A5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A7"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A6"
+        android:layout_toEndOf="@+id/A6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A8"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A7"
+        android:layout_toEndOf="@+id/A7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A9"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A8"
+        android:layout_toEndOf="@+id/A8" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/A10"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/A9"
+        android:layout_toEndOf="@+id/A9" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/B1"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/A1"
+        android:layout_toStartOf="@+id/A2"
+        android:text="B1" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/B2"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/B1"
+        android:layout_toEndOf="@+id/B1"
+        android:text="B2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/B3"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/B2"
+        android:layout_alignStart="@+id/A3"
+        android:text="B3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/B4"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/B3"
+        android:layout_toEndOf="@+id/B3"
+        android:text="B4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/B5"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/B4"
+        android:layout_toEndOf="@+id/A6"
+        android:text="B5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/B6"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/B5"
+        android:layout_alignStart="@+id/A8"
+        android:text="B6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/B7"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/B6"
+        android:layout_alignStart="@+id/A9"
+        android:text="B7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/B8"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/B7"
+        android:layout_alignStart="@+id/A10"
+        android:text="B8" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/C1"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_below="@+id/B1"
+        android:layout_toStartOf="@+id/B2"
+        android:layout_marginTop="29dp"
+        android:text="C1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/C2"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/C1"
+        android:layout_toStartOf="@+id/B3"
+        android:text="C2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/C3"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/C2"
+        android:layout_toEndOf="@+id/C2"
+        android:text="C3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/C4"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/C3"
+        android:layout_alignStart="@+id/B4"
+        android:text="C4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/C5"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/C4"
+        android:layout_toStartOf="@+id/B6"
+        android:text="C5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/C6"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/C5"
+        android:layout_toEndOf="@+id/C5"
+        android:text="C6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/C7"
+        android:backgroundTint="#87A96B"
+        android:layout_alignTop="@+id/C6"
+        android:layout_toStartOf="@+id/B8"
+        android:text="C7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/C8"
+        android:backgroundTint="#87A96B"
+        android:layout_alignTop="@+id/C7"
+        android:layout_toEndOf="@+id/C7"
+        android:text="C8" />
+
+    <TextView
+        android:text="A"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignTop="@+id/A1"
+        android:layout_above="@+id/B1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="B"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignBottom="@+id/B1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="   A"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignBottom="@+id/A10"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/A10" />
+
+    <TextView
+        android:text="   B"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:text="   C"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignBottom="@+id/C8"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:text="Seats Selected : 2"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/Your"
+        android:backgroundTint="#87A96B"
+        android:layout_below="@+id/button3"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:text="Your  Seats"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_height="70dp"
+        android:textSize="18sp"
+        android:textColor="#87A96B"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignTop="@+id/Your"
+        android:layout_toEndOf="@+id/Your"
+        android:layout_alignBottom="@+id/Your" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/proceed"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:text="Proceed"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignEnd="@+id/textView12"
+        android:onClick="seat_information"/>
+
+    <TextView
+        android:text="C"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignBottom="@+id/C1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/D1"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/C1"
+        android:layout_toStartOf="@+id/C2"
+        android:text="D1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/D2"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/D1"
+        android:layout_toEndOf="@+id/D1"
+        android:text="D2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/D3"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/D2"
+        android:layout_toStartOf="@+id/C4"
+        android:text="D3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/D4"
+        android:backgroundTint="#A45B5B"
+        android:layout_alignTop="@+id/D3"
+        android:layout_toEndOf="@+id/D3"
+        android:text="D4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/D5"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignStart="@+id/C5"
+        android:layout_alignTop="@+id/D4"
+        android:text="D5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/D6"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/D5"
+        android:layout_toEndOf="@+id/D5"
+        android:text="D6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/D7"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/D6"
+        android:layout_toEndOf="@+id/D6"
+        android:text="D7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:id="@+id/D8"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:layout_alignTop="@+id/D7"
+        android:layout_toEndOf="@+id/D7"
+        android:text="D8" />
+
+    <TextView
+        android:text="D"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignBottom="@+id/D1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="   D"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:gravity="bottom|left|center_vertical"
+        android:layout_alignBottom="@+id/D8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Screen Here"
+        android:id="@+id/textView13"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/D5"
+        android:layout_centerHorizontal="true"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
